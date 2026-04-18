@@ -1,0 +1,122 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #e0f2fe 0%, transparent 40%),
+    radial-gradient(circle at bottom right, #c7d2fe 0%, transparent 35%),
+    #f8fafc;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.page-shell {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.page-header {
+  background: #ffffff;
+  border: 1px solid #dbeafe;
+  border-radius: 24px;
+  padding: 2rem;
+  margin-bottom: 1.75rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  color: #2563eb;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  line-height: 1.05;
+}
+
+.lead {
+  margin-top: 1rem;
+  max-width: 40rem;
+  line-height: 1.8;
+  color: #334155;
+}
+
+.intro-card {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.intro-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+  object-fit: cover;
+  border: 1px solid #dbeafe;
+}
+
+.intro-text {
+  background: white;
+  padding: 1.75rem;
+  border-radius: 22px;
+  border: 1px solid #dbeafe;
+}
+
+.interest-list {
+  list-style: disc inside;
+  margin: 1rem 0 1.25rem;
+  padding-left: 1rem;
+  color: #1e293b;
+}
+
+.interest-list li {
+  margin-bottom: 0.75rem;
+}
+
+.action-button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 0.95rem 1.4rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.action-button:hover {
+  background-color: #1d4ed8;
+}
+
+.page-footer {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  text-align: center;
+  color: #475569;
+}
+
+@media (max-width: 760px) {
+  .intro-card {
+    grid-template-columns: 1fr;
+  }
+}
