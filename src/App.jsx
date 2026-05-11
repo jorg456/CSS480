@@ -64,7 +64,7 @@ function App() {
       </main>
 
       <footer className="page-footer">
-        <p>Created by Jin · Built with React.js</p>
+        <p>Created by Jin</p>
       </footer>
     </div>
   );
