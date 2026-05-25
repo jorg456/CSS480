@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { NavLink, Route, Routes, useNavigate } from 'react-router-dom';
+import AttentionPage from './AttentionPage.jsx';
 import ThingsToRead from './ThingsToRead.jsx';
 
 const initialInterests = [
@@ -126,6 +127,12 @@ function App() {
         >
           Things to Read
         </NavLink>
+        <NavLink
+          to="/attention"
+          className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+        >
+          Attention Page
+        </NavLink>
       </nav>
 
       <Routes>
@@ -134,6 +141,7 @@ function App() {
           element={<HomePage interests={interests} sortedAsc={sortedAsc} reorder={reorder} />}
         />
         <Route path="/read" element={<ThingsToRead />} />
+        <Route path="/attention" element={<AttentionPage />} />
       </Routes>
 
       <footer className="page-footer">
